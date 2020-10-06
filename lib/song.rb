@@ -41,9 +41,9 @@ end
 
 def self.artist_count
   @@artists.each do |i|
-  @@gartist_count[i] = @@genres.count(i)
+  @@artist_count[i] = @@artists.count(i)
 end
-@@genre_count
+@@artist_count
 end
 
 
