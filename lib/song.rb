@@ -37,7 +37,8 @@ end
 
 
 def self.artist_count
-  self.artists.map {|i| [i,@@artists.count(i)]}.to_h
+  @@genres.each do |i|
+  @@genre_count[i] = 
 end
 
 
