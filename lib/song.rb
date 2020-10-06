@@ -32,7 +32,10 @@ end
 
 
 def self.genre_count
-  self.genres.map {|i| [i,@@genres.count(i)]}.to_h
+  @@genres.each do |i|
+  @@genre_count[i] = @@genres.count(i)
+end
+@@genre_count
 end
 
 
